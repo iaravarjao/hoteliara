@@ -75,7 +75,7 @@ private Connection connection;
 
 	public void atualizar(String nome, String sobrenome, Date dataNascimento, String nacionalidade, String telefone, Integer id) {
 		try (PreparedStatement stm = connection
-				.prepareStatement("UPDATE hospedes SET nome = ?, sobrenome = ?, data_nascimento = ?, nacionalidade = ?, telefone = ? WHERE id_hospede = ?")) {
+				.prepareStatement("UPDATE hospedes SET nome = ?, sobrenome = ?, dataNascimento = ?, nacionalidade = ?, telefone = ? WHERE id_hospede = ?")) {
 			stm.setString(1, nome);
 			stm.setString(2, sobrenome);
 			stm.setDate(3, dataNascimento);
