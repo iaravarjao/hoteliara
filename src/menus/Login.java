@@ -112,18 +112,18 @@ public class Login extends JFrame {
 		txtUsuario.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
-				 if (txtUsuario.getText().equals("Digite o usuario")) {
+				 if (txtUsuario.getText().equals("Digite seu nome de usuario")) {
 					 txtUsuario.setText("");
 					 txtUsuario.setForeground(Color.black);
 			        }
 			        if (String.valueOf(txtSenha.getPassword()).isEmpty()) {
-			        	txtSenha.setText("***");
+			        	txtSenha.setText("********");
 			        	txtSenha.setForeground(Color.gray);
 			        }
 			}
 		});
 		txtUsuario.setFont(new Font("Roboto", Font.PLAIN, 16));
-		txtUsuario.setText("Digite o nome de usuario");
+		txtUsuario.setText("Digite seu nome de usuario");
 		txtUsuario.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 		txtUsuario.setForeground(SystemColor.activeCaptionBorder);
 		txtUsuario.setBounds(65, 256, 324, 32);
