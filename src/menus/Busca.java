@@ -218,6 +218,8 @@ public class Busca extends JFrame {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				atualizarHospede();
+				limparTabela();
+				preencherTabelaHospedes();
 			}
 		});
 		btnEditar.setBounds(635, 508, 122, 35);
@@ -308,7 +310,7 @@ public class Busca extends JFrame {
 	
 	private void atualizarHospede() {
 		Optional.ofNullable(modeloHospede.getValueAt(tbHospedes.getSelectedRow(), tbHospedes.getSelectedColumn()))
-				.ifPresentOrElse(filaHuesped -> {
+				.ifPresentOrElse(filaHospedes -> {
 
 					String nome = (String) modeloHospede.getValueAt(tbHospedes.getSelectedRow(), 1);
 					String sobrenome = (String) modeloHospede.getValueAt(tbHospedes.getSelectedRow(), 2);
