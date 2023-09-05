@@ -18,10 +18,11 @@ Criação de um sistema de gerenciamento de hóspedes para o Hotel Iara. É inic
 
 # Funcionalidades
 
-- Login de usuário
-- Cadastro de hospedes
-- Busca de hospede por id
-- (Não consegui realizar todas as funcionalidades propostas no challenge por falta de tempo, mas em outro momento quem sabe atualizo o projeto)
+- Login de usuário;
+- Cadastro de hospedes;
+- Busca de hospede por id;
+- Editar e excluir registro;
+- (Não consegui realizar todas as funcionalidades propostas no challenge como cadastro de reserva do hóspede por falta de tempo, mas em outro momento quem sabe atualizo o projeto)
 
 # Demonstração da Aplicação
 
