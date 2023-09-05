@@ -228,7 +228,7 @@ public class Login extends JFrame {
 	}
 	
 	private void Login() {
-		 String Usuario= "root";
+		 String Usuario= "gerente";
 	     String Senha="1234";
 
 	        String senhaa=new String (txtSenha.getPassword());
